@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": ">=12"
+  },
   "name": "OneBitExchange",
   "private": true,
   "dependencies": {
