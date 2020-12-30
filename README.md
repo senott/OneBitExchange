@@ -28,6 +28,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![Codeship Status for senott/OneBitExchange](https://app.codeship.com/projects/cf808795-58a6-4f89-9dd2-cfa5b39e796d/status?branch=master)](https://app.codeship.com/projects/422753)
 
 
 
@@ -46,7 +47,7 @@
     <a href="https://github.com/senott/OneBitExchange"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/senott/OneBitExchange">View Demo</a>
+    <a href="https://obc-exchanges.herokuapp.com/">View Demo</a>
     ·
     <a href="https://github.com/senott/OneBitExchange/issues">Report Bug</a>
     ·
@@ -78,16 +79,12 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://obc-exchanges.herokuapp.com/)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`senott`, `repo_name`, `twitter_handle`, `email`
-
 
 ### Built With
 
-* [Ruby on Rails]()
-* [Javascript]()
-* [HTML]()
+* [Ruby on Rails](https://rubyonrails.org/)
+* [Javascript](https://www.javascript.com/)
+* [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
 
 
 
@@ -98,11 +95,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+This project requires Docker to run, so you must go to [Docker](https://docs.docker.com/get-docker/) and follow the instructions to install it in your operating system.
 
 ### Installation
 
@@ -110,20 +103,24 @@ npm install npm@latest -g
 ```sh
 git clone https://github.com/senott/OneBitExchange.git
 ```
-2. Install NPM packages
+2. Install Rails gems
 ```sh
-npm install
+docker-compose run --rm app bundle install
 ```
-
-
+2. Install javascript dependencies
+```sh
+docker-compose run --rm app yarn
+```
+3. Start up the container
+```sh
+docker-compose up
+```
+4. Go to http://localhost:3000 in your favorite browser
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+Select the origin currency, input the amount you want to convert, select the target currency and click on the button.
 
 
 <!-- ROADMAP -->
@@ -165,10 +162,8 @@ Project Link: [https://github.com/senott/OneBitExchange](https://github.com/seno
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
-
+* [Bootstrap](https://getbootstrap.com/)
+* [Docker](https://www.docker.com/)
 
 
 
