@@ -179,7 +179,7 @@ Project Link: [https://github.com/senott/OneBitExchange](https://github.com/seno
 [issues-shield]: https://img.shields.io/github/issues/senott/OneBitExchange.svg?style=flat-square
 [issues-url]: https://github.com/senott/OneBitExchange/issues
 [license-shield]: https://img.shields.io/github/license/senott/OneBitExchange.svg?style=flat-square
-[license-url]: https://github.com/senott/OneBitExchange/blob/master/LICENSE.txt
+[license-url]: https://github.com/senott/OneBitExchange/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/senott
 [product-screenshot]: /app/assets/images/screenshot.jpg
